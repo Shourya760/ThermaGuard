@@ -1,0 +1,124 @@
+{
+  "_dataset_info": {
+    "description": "CoolBlock pilot zone dataset — Delhi NCR, India.",
+    "pilot_area": "Delhi NCR, India",
+    "coordinate_source": "OpenStreetMap neighbourhood centroids (manually verified).",
+    "data_status": "DEMO / ILLUSTRATIVE — for hackathon MVP only.",
+    "important_notice": "This dataset contains verified geographic coordinates and administrative metadata only. Heat-indicator fields (land_surface_temperature_celsius, vegetation_coverage_percent, shade_coverage_percent, population_vulnerability_index) are NULL. These values CANNOT be reliably sourced without satellite imagery (e.g. Landsat LST) or validated socio-economic datasets. They will be populated in a future data-collection sprint. Do NOT invent or estimate these values.",
+    "air_temperature_note": "Air temperature is retrieved in real time from Open-Meteo (Phase 3) per request. It is NOT stored here because it changes continuously and is NOT interchangeable with land-surface temperature.",
+    "created_utc": "2024-06-15T00:00:00Z",
+    "schema_version": "1.0"
+  },
+  "zones": [
+    {
+      "id": "delhi-connaught-place",
+      "name": "Connaught Place",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "latitude": 28.6315,
+      "longitude": 77.2167,
+      "area_type": "commercial",
+      "description": "Dense commercial and retail district in central Delhi. Characterised by high impervious surface coverage, heavy vehicular traffic, and minimal tree canopy. A recognised urban heat island hotspot in academic literature.",
+      "coordinate_source": "OpenStreetMap node for Connaught Place centroid.",
+      "data_provenance": "Administrative boundaries and zone type from OpenStreetMap (openstreetmap.org). Heat-island characterisation from published literature (e.g. Mohan et al., 2012, Urban Climate).",
+      "data_status": "DEMO",
+      "last_verified_utc": "2024-06-15T00:00:00Z",
+      "heat_indicators": {
+        "land_surface_temperature_celsius": null,
+        "vegetation_coverage_percent": null,
+        "shade_coverage_percent": null,
+        "population_vulnerability_index": null,
+        "missing_data_reason": "Satellite-derived LST and validated vulnerability indices not yet sourced. These fields require Landsat/MODIS imagery processing and peer-reviewed socio-economic data."
+      }
+    },
+    {
+      "id": "delhi-lodhi-garden",
+      "name": "Lodhi Garden Area",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "latitude": 28.5931,
+      "longitude": 77.2196,
+      "area_type": "green_space",
+      "description": "Historic landscaped garden and surrounding residential zone in south-central Delhi. Significantly higher tree canopy compared to central commercial zones, frequently cited as a local cooling reference point.",
+      "coordinate_source": "OpenStreetMap relation for Lodhi Garden centroid.",
+      "data_provenance": "Administrative boundaries and land-use classification from OpenStreetMap. Green-space characterisation from Delhi Development Authority land-use maps (publicly available).",
+      "data_status": "DEMO",
+      "last_verified_utc": "2024-06-15T00:00:00Z",
+      "heat_indicators": {
+        "land_surface_temperature_celsius": null,
+        "vegetation_coverage_percent": null,
+        "shade_coverage_percent": null,
+        "population_vulnerability_index": null,
+        "missing_data_reason": "Satellite-derived LST and validated vulnerability indices not yet sourced."
+      }
+    },
+    {
+      "id": "delhi-okhla-industrial",
+      "name": "Okhla Industrial Area",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "latitude": 28.5375,
+      "longitude": 77.2720,
+      "area_type": "industrial",
+      "description": "Major industrial zone in south-east Delhi. High proportion of factory rooftops, paved surfaces, and heat-generating machinery. Residential neighbourhoods in close proximity may face elevated heat exposure.",
+      "coordinate_source": "OpenStreetMap relation for Okhla Industrial Area Phase II centroid.",
+      "data_provenance": "Land-use classification from OpenStreetMap and Delhi Master Plan 2021 (publicly available). Industrial characterisation from Delhi Pollution Control Committee records.",
+      "data_status": "DEMO",
+      "last_verified_utc": "2024-06-15T00:00:00Z",
+      "heat_indicators": {
+        "land_surface_temperature_celsius": null,
+        "vegetation_coverage_percent": null,
+        "shade_coverage_percent": null,
+        "population_vulnerability_index": null,
+        "missing_data_reason": "Satellite-derived LST and validated vulnerability indices not yet sourced."
+      }
+    },
+    {
+      "id": "delhi-rohini",
+      "name": "Rohini Residential Sector",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "latitude": 28.7206,
+      "longitude": 77.1100,
+      "area_type": "residential",
+      "description": "Large planned residential suburb in north-west Delhi. Mix of multi-storey housing, local markets, and parks. Represents a typical mid-density residential heat-exposure context.",
+      "coordinate_source": "OpenStreetMap node for Rohini Sector 10 centroid (representative of broader zone).",
+      "data_provenance": "Administrative classification from OpenStreetMap and Delhi Urban Art Commission zoning maps.",
+      "data_status": "DEMO",
+      "last_verified_utc": "2024-06-15T00:00:00Z",
+      "heat_indicators": {
+        "land_surface_temperature_celsius": null,
+        "vegetation_coverage_percent": null,
+        "shade_coverage_percent": null,
+        "population_vulnerability_index": null,
+        "missing_data_reason": "Satellite-derived LST and validated vulnerability indices not yet sourced."
+      }
+    },
+    {
+      "id": "delhi-jahangirpuri",
+      "name": "Jahangirpuri",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "latitude": 28.7369,
+      "longitude": 77.1644,
+      "area_type": "dense_urban_residential",
+      "description": "High-density informal and formal residential settlement in north Delhi. High building density, narrow streets, limited green cover. Populations here may face compounded heat vulnerability due to housing quality and limited cooling infrastructure.",
+      "coordinate_source": "OpenStreetMap node for Jahangirpuri Metro Station vicinity (representative centroid).",
+      "data_provenance": "Land-use classification from OpenStreetMap. Population density context from Census of India 2011 (publicly available — note: figures may not reflect current density).",
+      "data_status": "DEMO",
+      "last_verified_utc": "2024-06-15T00:00:00Z",
+      "heat_indicators": {
+        "land_surface_temperature_celsius": null,
+        "vegetation_coverage_percent": null,
+        "shade_coverage_percent": null,
+        "population_vulnerability_index": null,
+        "missing_data_reason": "Satellite-derived LST and validated vulnerability indices not yet sourced."
+      }
+    }
+  ]
+}
